@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Review Detection - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Review Analysis</h1>
+
+        {% for review, label in results %}
+            <div class="review-box {{ 'real' if label == 'OR' else 'fake' }}">
+                <p>{{ review }}</p>
+                <strong>{{ 'Genuine Review' if label == 'OR' else 'Fake Review' }}</strong>
+            </div>
+        {% endfor %}
+
+        <a href="/" style="margin-top: 20px; display: inline-block; color: #4dabf7;">← Try another URL</a>
+    </div>
+</body>
+</html>

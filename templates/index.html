@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Review Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fake Review Detector for Amazon Products</h1>
+
+        {% if error %}
+            <p class="error">Error: {{ error }}</p>
+        {% endif %}
+
+        <form method="POST" action="/">
+            <input type="text" name="product_url" placeholder="Enter Amazon.in Product URL" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/madhav-kanjilimadom/" target="_blank">
+                <img src="{{ url_for('static', filename='linkedinlogo.png') }}" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://github.com/Maddy-git-3018/" target="_blank">
+                <img src="{{ url_for('static', filename='githublogo.png') }}" alt="GitHub" class="icon">
+            </a>
+        </div>
+        
+        <!-- Contact Info -->
+        <p class="contact-email">
+            Contact: <a href="mailto:madhav.kanjilimadom@gmail.com">madhav.kanjilimadom@gmail.com</a>
+        </p>
+
+    </div>
+</body>
+</html>
