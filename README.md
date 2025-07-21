@@ -86,8 +86,8 @@ Visit `http://127.0.0.1:5000/` in your browser.
 
 Paste this into the form:
 
-```
-https://www.amazon.in/dp/B0CHX1W1XY
+```[
+https://www.amazon.in/dp/B0CHX1W1XY](https://www.amazon.in/ASIAN-Wonder-13-Sports-Running-Shoes/dp/B01N54ZM9W)
 ```
 
 The app will:
