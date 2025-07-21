@@ -8,11 +8,6 @@ from utils import convertmyTxt  # Required so joblib can find it
 
 app = Flask(__name__)
 
-# def convertmyTxt(rv):
-#     np = [c for c in rv if c not in string.punctuation]
-#     np = ''.join(np)
-#     return [w for w in np.split() if w.lower() not in stopwords.words('english')]
-# Load models
 models = {
     'Logistic Regression': joblib.load('models/logreg.pkl'),
     'Random Forest': joblib.load('models/randomforest.pkl'),
