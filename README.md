@@ -6,7 +6,7 @@ A Flask-based web app that detects **fake reviews** from **Amazon product pages*
 
 ## Demo
 
-> ![Demo Screenshot](demo-screenshot.png)
+> ![Demo Screenshot](demo.png)
 
 ---
 
